@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="blogApp">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <title>Ali Haris | A software engineer from Maldives</title>
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto Condensed:300|Roboto Slab:300,400" />
+    <link rel="stylesheet" href="css/prism-syntaxhl.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body ng-controller="ArticlesController">
+
+    <div class="loading-wrap">
+        <!-- <div class="loading-icon"></div> -->
+    </div>
+
+    <div class="site-container">
+        <header class="site-header">
+            <div class="wrap">
+                <div class="site-avatar">
+                    <a href="/">
+                        <img src="img/avatar.png" />
+                    </a>
+                </div>
+
+                <div class="title-area">
+                    <h1 class="site-title"><a href="/">Ali Haris</a></h1>
+                </div>
+
+                <div class="widget-area header-widget-area">
+                    <section class="widget widget_text" id="text-2">
+                        <div class="widget-wrap">
+                            <div class="textwidget">
+                                <p>Software engineer from Maldives.</p>
+                                <!--
+                                <p><a href="#">About</a> / <a href="#">Blog</a> / <a href="#">Contact</a></p>
+                                -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="widget simple-social-icons" id="simple-social-icons-2">
+                        <div class="widget-wrap">
+                            <ul class="aligncenter">
+                                <li class="social-gplus">
+                                    <a href="https://plus.google.com/+AliHaris11">&#xe801;</a>
+                                </li>
+
+                                <li class="social-linkedin">
+                                    <a href="https://lk.linkedin.com/in/aliharis">&#xe806;</a>
+                                </li>
+
+                                <li class="social-twitter">
+                                    <a href="https://twitter.com/iharis">&#xe80d;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </header>
+
+        <div class="site-inner">
+            <div class="content-sidebar-wrap">
+                <main class="content" role="main" ng-view>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.16/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.16/angular-sanitize.min.js"></script>
+    <script src="js/prism-syntaxhl.js"></script>
+    <script src="js/controllers.js"></script>
+</body>
+</html>

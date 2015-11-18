@@ -1,0 +1,12 @@
+                    <article class="entry" ng-repeat="article in articles">
+                        <header class="entry-header">
+                            <h1 class="entry-title"><a href="articles/{{article.slug}}">{{article.title}}</a></h1>
+
+                            <p class="entry-meta">
+                                <time class="entry-time" datetime="{{article.date}}">{{article.date | date:'longDate'}}</time>
+                            </p>
+                        </header>
+
+                        <div class="entry-content" ng-bind-html="article.excerpt">
+                        </div>
+                    </article>
