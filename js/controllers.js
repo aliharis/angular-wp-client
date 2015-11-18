@@ -16,7 +16,7 @@ blogApp.config(['$routeProvider', '$locationProvider',
         redirectTo: '/articles'
       });
 
-      $locationProvider.html5Mode(true).hashPrefix('!');
+      //$locationProvider.html5Mode(true).hashPrefix('!');
   }]);
 
 var blogControllers = angular.module('blogControllers', []);
